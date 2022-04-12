@@ -47,16 +47,16 @@ function App() {
 
   return (
       <>
-          <div className={s.container}>
-            <h1 className={s.title}>Phonebook</h1>
-            <ContactForm onSubmit={addContacts} />
-            <h2 className={s.title}>Contacts</h2>
-            <Filter value={filter} onChange={changeFilter} />
-            <ContactList>
-                <ContactItem contacts={visibleContact}
+        <div className={s.container}>
+          <h1 className={s.title}>Phonebook</h1>
+          <ContactForm onSubmit={addContacts} />
+          <h2 className={s.title}>Contacts</h2>
+          <Filter value={filter} onChange={changeFilter} />
+          <ContactList>
+            <ContactItem contacts={visibleContact}
                 onDeleteContact={deleteContact}/>
-            </ContactList>
-          </div>
+          </ContactList>
+        </div>
       </>
     );
 };
